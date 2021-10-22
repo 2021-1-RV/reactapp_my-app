@@ -1,13 +1,32 @@
-import logo from './logo.svg'
 import './App.css'
-import Hello from './components/hello/index.jsx'
 
 function App() {
   return (
     <>
-      <Hello name={' Вася'} surname={' Васечкин'} />
-      <Hello name={' Настя'} surname={' Коклюшкина'} />
-      <Hello name={' Дима'} surname={' Пасенков'} />
+      <div className="userCard">
+        <div className="userContainer">
+          <div className="userImage"></div>
+          <div className="userInfo">
+            <div className="userFullName">Emma Watson</div>
+            <div className="userEmail">@EmWatson</div>
+          </div>
+          <button className="btn"></button>
+        </div>
+        <div className="userStatContainer">
+          <div class="userStat">
+            <p class="letters">Tweets</p>
+            <p class="numbers">1,337</p>
+          </div>
+          <div class="userStat">
+            <p class="letters">Following</p>
+            <p class="numbers">561</p>
+          </div>
+          <div class="userStat">
+            <p class="letters">Followers</p>
+            <p class="numbers">718</p>
+          </div>
+        </div>
+      </div>
     </>
   )
 }
