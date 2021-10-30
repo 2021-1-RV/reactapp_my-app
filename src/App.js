@@ -1,7 +1,6 @@
-import User from './components/user'
+import React, { component } from 'react'
+import Stopwatch from './components/stopwatch'
 
-function App() {
-  return <User />
-}
+const App = () => <Stopwatch />
 
 export default App
