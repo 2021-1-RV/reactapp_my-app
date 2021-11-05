@@ -19,10 +19,29 @@ export default class Slide extends Component {
     this.load()
   }
   render() {
-    const { currentImage, width, height } = this.props
+    const { currentImage, nextImage, prevImage, width, height } = this.props
     return (
-      <div>
-        <img src={currentImage.src} width={width} height={height}></img>
+      <div className="allImage">
+        <img
+          src={prevImage.src}
+          alt="image"
+          width={width}
+          height={height}
+          className="image"
+        ></img>
+        <img
+          src={currentImage.src}
+          alt="image"
+          width={width}
+          height={height}
+        ></img>
+        <img
+          src={nextImage.src}
+          alt="image"
+          width={width}
+          height={height}
+          className="image"
+        ></img>
       </div>
     )
   }
