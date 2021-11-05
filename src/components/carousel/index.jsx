@@ -1,28 +1,29 @@
 import React, { Component } from 'react'
 import Slide from './Slide'
 import Slider from './Slider'
-
 export default class Carousel extends Component {
   constructor(props) {
     super(props)
     this.state = {
       index: 0,
-      width: 250,
-      height: 250,
+      width: 600,
+      height: 400,
     }
   }
   setFullScreenMode = (isFullScreen) => {
     !isFullScreen
-      ? this.setState({ width: '100%', height: '100%' })
-      : this.setState({ width: 250, height: 250 })
+      ? this.setState({ width: '50%', height: '50%' })
+      : this.setState({ width: 600, height: 400 })
   }
   setNextImage = () => {
     const { index } = this.state
-    this.setState({ index: index + 1 })
+    const { slides } = this.props
+    this.setState({ index: (index + 1) % slides.length })
   }
   setPrevImage = () => {
     const { index } = this.state
-    this.setState({ index: index - 1 })
+    const { slides } = this.props
+    this.setState({ index: (index - 1 + slides.length) % slides.length })
   }
   render() {
     const { index, width, height } = this.state
