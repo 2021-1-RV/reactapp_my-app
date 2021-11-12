@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
+import phoneImage from '../../../img/phone1.png'
 
-function IndexMobile() {
+function IndexMobile(props) {
+  const [phone1, setPhone1] = useState(new Image())
+
+  phone1.src = phoneImage
   return (
     <div className="mobile">
-      <div></div>
+      <div>
+        <img src={phone1.src} alt={phone1.alt} />
+      </div>
       <div>
         <p className="mobile-head">Create an account</p>
         <h3 className="mobile-title">

@@ -5,5 +5,4 @@ import Maket from './components/maket'
 function App() {
   return <Maket />
 }
-
 export default App

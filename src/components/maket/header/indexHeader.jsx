@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
+import logoImg from '../../img/logo.png'
 
-function IndexHeader() {
+function IndexHeader(props) {
+  const [logo, setlogoImg] = useState(new Image())
+
+  logo.src = logoImg
   return (
     <section className="container cont-flex">
-      <div></div>
+      <div>
+        <img src={logo.src} alt={logo.alt} />
+      </div>
 
       <nav>
         <ul>
