@@ -13,7 +13,7 @@ const head_footer_Img = [
 
 function Maket() {
   return (
-    <div>
+    <div className="container">
       <IndexHeader head_footer_Img={head_footer_Img}></IndexHeader>
       <IndexMain></IndexMain>
       <IndexFooter head_footer_Img={head_footer_Img}></IndexFooter>

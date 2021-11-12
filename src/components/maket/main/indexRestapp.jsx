@@ -4,7 +4,7 @@ function IndexRestapp() {
   return (
     <section className="restapp">
       <div>
-        <p className="restapp-info">Food app</p>
+        <p className="restapp-info">Restaurant app</p>
         <h1 className="restapp-title">
           Why stay hungry when you can order form Eats{' '}
         </h1>

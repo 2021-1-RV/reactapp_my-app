@@ -9,6 +9,7 @@
 .container {
   margin: 0 auto;
   max-width: 1440px;
+  padding: 20px;
 }
 
 .cont-flex {
@@ -45,6 +46,7 @@
   align-items: center;
   margin-top: 102px;
   margin-bottom: 50px;
+  padding: 0px 150px 0px 150px;
 }
 
 .mobile-head {
@@ -85,6 +87,7 @@
   align-items: center;
   margin-bottom: 142px;
   margin-top: 50px;
+  padding: 0px 150px 0px 150px;
 }
 
 .howThe {

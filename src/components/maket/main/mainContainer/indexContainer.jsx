@@ -8,10 +8,16 @@ const phone_Img = [
   {
     src: phone1,
     alt: 'Телефончик',
+    head: 'Create an account',
+    title: 'Create/login to an existing account to get started',
+    text: 'An account is created with your email and a desired password',
   },
   {
     src: phone2,
     alt: 'Телефончик',
+    head: 'Explore varieties',
+    title: 'Shop for your favorites meals as e dey hot',
+    text: 'Shop for your favorites meals or drinks and enjoy while doing it',
   },
 ]
 
