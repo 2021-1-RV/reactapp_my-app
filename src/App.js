@@ -1,21 +1,9 @@
 import React from 'react'
 import './App.css'
-import Carousel from './components/carousel'
-
-const slides = [
-  {
-    src: 'https://klike.net/uploads/posts/2019-05/medium/1556708030_2.jpg',
-  },
-  {
-    src: 'https://klike.net/uploads/posts/2019-05/medium/1556707997_5.jpg',
-  },
-  {
-    src: 'https://klike.net/uploads/posts/2019-05/medium/1556708028_8.jpg',
-  },
-]
+import Maket from './components/maket'
 
 function App() {
-  return <Carousel slides={slides} />
+  return <Maket />
 }
 
 export default App
