@@ -1,8 +1,13 @@
-import React from 'react'
 import './App.css'
-import Maket from './components/maket'
+import React from 'react'
+import Chat from './components/chat'
 
 function App() {
-  return <Maket />
+  return (
+    <>
+      <Chat />
+    </>
+  )
 }
+
 export default App
