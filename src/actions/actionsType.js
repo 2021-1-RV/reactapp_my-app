@@ -1,4 +1,0 @@
-const ACTION_TYPES = {
-  SEND_MESSAGE: 'SEND_MESSAGE',
-}
-export default ACTION_TYPES

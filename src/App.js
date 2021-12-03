@@ -1,11 +1,11 @@
 import './App.css'
 import React from 'react'
-import Chat from './components/chat'
+import UsersLoad from './users_load_component'
 
 function App() {
   return (
     <>
-      <Chat />
+      <UsersLoad />
     </>
   )
 }
